@@ -32,7 +32,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DepoAmtTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -83,21 +83,22 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "Zatwierdź";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // DepoAmtTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox1.Location = new System.Drawing.Point(355, 207);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 38);
-            this.textBox1.TabIndex = 26;
+            this.DepoAmtTb.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.DepoAmtTb.Location = new System.Drawing.Point(355, 207);
+            this.DepoAmtTb.Name = "DepoAmtTb";
+            this.DepoAmtTb.Size = new System.Drawing.Size(207, 38);
+            this.DepoAmtTb.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(252, 210);
+            this.label5.Location = new System.Drawing.Point(252, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 32);
             this.label5.TabIndex = 25;
@@ -108,11 +109,12 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(411, 322);
+            this.label7.Location = new System.Drawing.Point(424, 317);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 23);
+            this.label7.Size = new System.Drawing.Size(63, 23);
             this.label7.TabIndex = 41;
-            this.label7.Text = "Wyloguj się";
+            this.label7.Text = "Powrót";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label2
             // 
@@ -133,13 +135,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DepoAmtTb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Deposit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Deposit";
+            this.Load += new System.EventHandler(this.Deposit_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -153,7 +156,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DepoAmtTb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;

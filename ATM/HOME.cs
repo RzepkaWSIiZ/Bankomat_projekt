@@ -21,5 +21,32 @@ namespace ATM
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Balance bal = new Balance();
+            this.Hide();
+            bal.Show();
+        }
+        public static String AccNumber;
+        private void HOME_Load(object sender, EventArgs e)
+        {
+            AccNumlbl.Text = "Numer konta:" + Login.AccNumber;
+            AccNumber = Login.AccNumber;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Deposit depo = new Deposit();
+            depo.Show();
+            this.Hide();
+        }
     }
 }

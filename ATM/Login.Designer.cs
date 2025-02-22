@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.AccNumTb = new System.Windows.Forms.TextBox();
+            this.PinTb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(767, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 37);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "X";
             // 
             // label1
             // 
@@ -109,22 +120,22 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "KOD PIN";
             // 
-            // textBox1
+            // AccNumTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox1.Location = new System.Drawing.Point(381, 192);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 38);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.AccNumTb.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.AccNumTb.Location = new System.Drawing.Point(381, 192);
+            this.AccNumTb.Name = "AccNumTb";
+            this.AccNumTb.Size = new System.Drawing.Size(207, 38);
+            this.AccNumTb.TabIndex = 6;
+            this.AccNumTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // PinTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox2.Location = new System.Drawing.Point(381, 261);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 38);
-            this.textBox2.TabIndex = 7;
+            this.PinTb.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.PinTb.Location = new System.Drawing.Point(381, 261);
+            this.PinTb.Name = "PinTb";
+            this.PinTb.Size = new System.Drawing.Size(207, 38);
+            this.PinTb.TabIndex = 7;
             // 
             // button1
             // 
@@ -137,28 +148,19 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "ZALOGUJ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(384, 376);
+            this.label5.Location = new System.Drawing.Point(419, 379);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(204, 37);
+            this.label5.Size = new System.Drawing.Size(130, 23);
             this.label5.TabIndex = 9;
             this.label5.Text = "ZAREJSTRUJ SIĘ";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(767, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 37);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "X";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // Login
             // 
@@ -167,8 +169,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PinTb);
+            this.Controls.Add(this.AccNumTb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -194,8 +196,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox AccNumTb;
+        private System.Windows.Forms.TextBox PinTb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

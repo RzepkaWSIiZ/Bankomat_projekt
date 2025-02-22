@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Balancelbl = new System.Windows.Forms.Label();
+            this.AccNumberlbl = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -61,6 +61,7 @@
             this.label6.Size = new System.Drawing.Size(33, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -83,6 +84,7 @@
             this.label5.Size = new System.Drawing.Size(160, 32);
             this.label5.TabIndex = 18;
             this.label5.Text = "Numer konta:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label2
             // 
@@ -95,27 +97,27 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Stan konta:";
             // 
-            // label3
+            // Balancelbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(421, 256);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 32);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Stan kontawRs:";
+            this.Balancelbl.AutoSize = true;
+            this.Balancelbl.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.Balancelbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Balancelbl.Location = new System.Drawing.Point(421, 256);
+            this.Balancelbl.Name = "Balancelbl";
+            this.Balancelbl.Size = new System.Drawing.Size(167, 32);
+            this.Balancelbl.TabIndex = 21;
+            this.Balancelbl.Text = "Stan kontawzł:";
             // 
-            // label4
+            // AccNumberlbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(421, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 32);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Numer k";
+            this.AccNumberlbl.AutoSize = true;
+            this.AccNumberlbl.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.AccNumberlbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.AccNumberlbl.Location = new System.Drawing.Point(421, 199);
+            this.AccNumberlbl.Name = "AccNumberlbl";
+            this.AccNumberlbl.Size = new System.Drawing.Size(107, 32);
+            this.AccNumberlbl.TabIndex = 20;
+            this.AccNumberlbl.Text = "Numer k";
             // 
             // panel2
             // 
@@ -131,11 +133,12 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(343, 389);
+            this.label7.Location = new System.Drawing.Point(370, 393);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 23);
+            this.label7.Size = new System.Drawing.Size(63, 23);
             this.label7.TabIndex = 40;
-            this.label7.Text = "Wyloguj się";
+            this.label7.Text = "Powrót";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // Balance
             // 
@@ -144,14 +147,15 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Balancelbl);
+            this.Controls.Add(this.AccNumberlbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Balance";
             this.Text = "Balance";
+            this.Load += new System.EventHandler(this.Balance_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -166,8 +170,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Balancelbl;
+        private System.Windows.Forms.Label AccNumberlbl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
     }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,6 +39,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.AccNumlbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +54,17 @@
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(764, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 41);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "X";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -65,17 +77,6 @@
             this.label1.Text = "BANKOMAT - MENU";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(764, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 41);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "X";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -87,6 +88,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "WPŁAĆ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -147,6 +149,7 @@
             this.button6.TabIndex = 14;
             this.button6.Text = "STAN KONTA";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel2
             // 
@@ -167,12 +170,25 @@
             this.label5.Size = new System.Drawing.Size(113, 23);
             this.label5.TabIndex = 16;
             this.label5.Text = "WYLOGUJ SIĘ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // AccNumlbl
+            // 
+            this.AccNumlbl.AutoSize = true;
+            this.AccNumlbl.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.AccNumlbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.AccNumlbl.Location = new System.Drawing.Point(324, 103);
+            this.AccNumlbl.Name = "AccNumlbl";
+            this.AccNumlbl.Size = new System.Drawing.Size(155, 32);
+            this.AccNumlbl.TabIndex = 17;
+            this.AccNumlbl.Text = "Numer konta";
             // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.AccNumlbl);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button6);
@@ -186,6 +202,7 @@
             this.Name = "HOME";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HOME";
+            this.Load += new System.EventHandler(this.HOME_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -206,5 +223,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label AccNumlbl;
     }
 }

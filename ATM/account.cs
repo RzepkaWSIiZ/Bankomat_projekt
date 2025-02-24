@@ -57,7 +57,7 @@ namespace ATM
                     cmd.Parameters.AddWithValue("@Balance", bal);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Konto utworzono pomyślnie");
+                    MessageBox.Show("Nowe konto zostało utworzone");
 
                     Con.Close();
 

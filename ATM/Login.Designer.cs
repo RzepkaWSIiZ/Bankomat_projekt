@@ -155,11 +155,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(419, 379);
+            this.label5.Location = new System.Drawing.Point(428, 376);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 23);
+            this.label5.Size = new System.Drawing.Size(105, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "ZAREJSTRUJ SIĘ";
             this.label5.Click += new System.EventHandler(this.label5_Click);

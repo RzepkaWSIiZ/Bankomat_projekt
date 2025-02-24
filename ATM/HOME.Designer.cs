@@ -182,7 +182,7 @@
             this.AccNumlbl.AutoSize = true;
             this.AccNumlbl.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.AccNumlbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.AccNumlbl.Location = new System.Drawing.Point(324, 103);
+            this.AccNumlbl.Location = new System.Drawing.Point(306, 103);
             this.AccNumlbl.Name = "AccNumlbl";
             this.AccNumlbl.Size = new System.Drawing.Size(155, 32);
             this.AccNumlbl.TabIndex = 17;

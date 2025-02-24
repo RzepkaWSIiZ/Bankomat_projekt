@@ -220,10 +220,10 @@
             // dobdate
             // 
             this.dobdate.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.dobdate.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dobdate.Font = new System.Drawing.Font("Segoe UI", 5F);
             this.dobdate.Location = new System.Drawing.Point(568, 259);
             this.dobdate.Name = "dobdate";
-            this.dobdate.Size = new System.Drawing.Size(207, 23);
+            this.dobdate.Size = new System.Drawing.Size(207, 19);
             this.dobdate.TabIndex = 36;
             // 
             // button1

@@ -27,7 +27,7 @@ namespace ATM
             }
             else if(Pin2Tb.Text != Pin1Tb.Text)
             {
-                MessageBox.Show("Piny nie są takie same");
+                MessageBox.Show("Kody PIN muszą być takie same");
             }
             else
             {

@@ -32,8 +32,8 @@ namespace ATM
         private void button6_Click(object sender, EventArgs e)
         {
             Balance bal = new Balance();
-            this.Hide();
             bal.Show();
+            this.Hide();
         }
         public static String AccNumber;
         private void HOME_Load(object sender, EventArgs e)

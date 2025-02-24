@@ -48,5 +48,25 @@ namespace ATM
             depo.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ChangePin Pin = new ChangePin();
+            Pin.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Withdraw wd = new Withdraw();
+            wd.Show();
+            this.Hide();
+
+        }
     }
 }

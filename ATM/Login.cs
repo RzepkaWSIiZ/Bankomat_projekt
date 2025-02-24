@@ -53,5 +53,10 @@ namespace ATM
             Con.Close();
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

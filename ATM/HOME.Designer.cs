@@ -64,6 +64,7 @@
             this.label2.Size = new System.Drawing.Size(36, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -101,6 +102,7 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "WYPŁAĆ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -137,6 +139,7 @@
             this.button5.TabIndex = 13;
             this.button5.Text = "ZMIEŃ PIN";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 

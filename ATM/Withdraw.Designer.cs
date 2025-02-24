@@ -31,12 +31,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.wdamtTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.balancelbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,11 +56,12 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(433, 346);
+            this.label7.Location = new System.Drawing.Point(447, 342);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 23);
+            this.label7.Size = new System.Drawing.Size(63, 23);
             this.label7.TabIndex = 46;
-            this.label7.Text = "Wyloguj się";
+            this.label7.Text = "Powrót";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button1
             // 
@@ -73,21 +74,22 @@
             this.button1.TabIndex = 45;
             this.button1.Text = "Zatwierdź";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // wdamtTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F);
-            this.textBox1.Location = new System.Drawing.Point(377, 231);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 38);
-            this.textBox1.TabIndex = 44;
+            this.wdamtTb.Font = new System.Drawing.Font("Segoe UI", 13.8F);
+            this.wdamtTb.Location = new System.Drawing.Point(377, 231);
+            this.wdamtTb.Name = "wdamtTb";
+            this.wdamtTb.Size = new System.Drawing.Size(207, 38);
+            this.wdamtTb.TabIndex = 44;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(245, 234);
+            this.label5.Location = new System.Drawing.Point(245, 231);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 32);
             this.label5.TabIndex = 43;
@@ -114,6 +116,7 @@
             this.label6.Size = new System.Drawing.Size(33, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -126,33 +129,34 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "BANKOMAT";
             // 
-            // label3
+            // balancelbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(245, 184);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 32);
-            this.label3.TabIndex = 49;
-            this.label3.Text = "Stan konta:";
+            this.balancelbl.AutoSize = true;
+            this.balancelbl.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.balancelbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.balancelbl.Location = new System.Drawing.Point(245, 184);
+            this.balancelbl.Name = "balancelbl";
+            this.balancelbl.Size = new System.Drawing.Size(132, 32);
+            this.balancelbl.TabIndex = 49;
+            this.balancelbl.Text = "Stan konta:";
             // 
             // Withdraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.balancelbl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.wdamtTb);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Withdraw";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Withdraw";
+            this.Load += new System.EventHandler(this.Withdraw_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -165,11 +169,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox wdamtTb;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label balancelbl;
     }
 }

@@ -135,6 +135,7 @@
             this.PinTb.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.PinTb.Location = new System.Drawing.Point(381, 261);
             this.PinTb.Name = "PinTb";
+            this.PinTb.PasswordChar = '*';
             this.PinTb.Size = new System.Drawing.Size(207, 38);
             this.PinTb.TabIndex = 7;
             // 

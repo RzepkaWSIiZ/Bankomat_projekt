@@ -154,6 +154,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Balance";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Balance";
             this.Load += new System.EventHandler(this.Balance_Load);
             this.panel1.ResumeLayout(false);

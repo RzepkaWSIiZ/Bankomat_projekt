@@ -75,5 +75,12 @@ namespace ATM
             fastcash.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ministatement mini = new ministatement();
+            mini.Show();
+            this.Hide();
+        }
     }
 }

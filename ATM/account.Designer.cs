@@ -220,9 +220,10 @@
             // dobdate
             // 
             this.dobdate.CalendarFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.dobdate.Location = new System.Drawing.Point(568, 260);
+            this.dobdate.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dobdate.Location = new System.Drawing.Point(568, 259);
             this.dobdate.Name = "dobdate";
-            this.dobdate.Size = new System.Drawing.Size(207, 22);
+            this.dobdate.Size = new System.Drawing.Size(207, 23);
             this.dobdate.TabIndex = 36;
             // 
             // button1
@@ -253,11 +254,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label13.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label13.Location = new System.Drawing.Point(367, 404);
+            this.label13.Location = new System.Drawing.Point(379, 404);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 23);
+            this.label13.Size = new System.Drawing.Size(63, 23);
             this.label13.TabIndex = 39;
-            this.label13.Text = "Wyloguj się";
+            this.label13.Text = "Powrót";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // occupationtb
@@ -296,11 +297,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(321, 28);
+            this.label2.Location = new System.Drawing.Point(261, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 41);
+            this.label2.Size = new System.Drawing.Size(327, 41);
             this.label2.TabIndex = 1;
-            this.label2.Text = "BANKOMAT";
+            this.label2.Text = "BANKOMAT - Rejstracja";
             // 
             // account
             // 

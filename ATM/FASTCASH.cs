@@ -41,7 +41,120 @@ namespace ATM
         {
             getbalance();
         }
-
+        private void addtransaction1()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 100 + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+        private void addtransaction2()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 500 + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+        private void addtransaction3()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 1000 + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+        private void addtransaction4()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 2000 + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+        private void addtransaction5()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 5000 + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+        private void addtransaction6()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 10000 + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (bal < 100)
@@ -59,6 +172,7 @@ namespace ATM
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Wypłata udana!");
                     Con.Close();
+                    addtransaction1();
                     HOME home = new HOME();
                     home.Show();
                     this.Hide();
@@ -87,6 +201,7 @@ namespace ATM
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Wypłata udana!");
                     Con.Close();
+                    addtransaction2();
                     HOME home = new HOME();
                     home.Show();
                     this.Hide();
@@ -115,6 +230,7 @@ namespace ATM
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Wypłata udana!");
                     Con.Close();
+                    addtransaction3();
                     HOME home = new HOME();
                     home.Show();
                     this.Hide();
@@ -143,6 +259,7 @@ namespace ATM
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Wypłata udana!");
                     Con.Close();
+                    addtransaction4();
                     HOME home = new HOME();
                     home.Show();
                     this.Hide();
@@ -171,6 +288,7 @@ namespace ATM
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Wypłata udana!");
                     Con.Close();
+                    addtransaction5();
                     HOME home = new HOME();
                     home.Show();
                     this.Hide();
@@ -199,6 +317,7 @@ namespace ATM
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Wypłata udana!");
                     Con.Close();
+                    addtransaction6();
                     HOME home = new HOME();
                     home.Show();
                     this.Hide();

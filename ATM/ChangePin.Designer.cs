@@ -77,6 +77,7 @@
             this.label2.Size = new System.Drawing.Size(33, 37);
             this.label2.TabIndex = 10;
             this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -137,6 +138,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(411, 301);
             this.button1.Name = "button1";
@@ -172,6 +174,7 @@
             this.label7.Size = new System.Drawing.Size(63, 23);
             this.label7.TabIndex = 41;
             this.label7.Text = "Powrót";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // ChangePin
             // 

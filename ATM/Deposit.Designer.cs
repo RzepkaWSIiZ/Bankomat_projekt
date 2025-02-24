@@ -76,6 +76,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(355, 260);
             this.button1.Name = "button1";

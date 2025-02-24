@@ -34,9 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MinistatementDGV = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinistatementDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -71,6 +71,7 @@
             this.label6.Size = new System.Drawing.Size(33, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -88,11 +89,12 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(363, 411);
+            this.label5.Location = new System.Drawing.Point(373, 411);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 23);
+            this.label5.Size = new System.Drawing.Size(63, 23);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Wyloguj się";
+            this.label5.Text = "Powrót";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel2
             // 
@@ -103,17 +105,17 @@
             this.panel2.Size = new System.Drawing.Size(800, 13);
             this.panel2.TabIndex = 27;
             // 
-            // dataGridView1
+            // MinistatementDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 143);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 265);
-            this.dataGridView1.TabIndex = 28;
+            this.MinistatementDGV.BackgroundColor = System.Drawing.Color.White;
+            this.MinistatementDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MinistatementDGV.GridColor = System.Drawing.Color.Gray;
+            this.MinistatementDGV.Location = new System.Drawing.Point(0, 143);
+            this.MinistatementDGV.Name = "MinistatementDGV";
+            this.MinistatementDGV.RowHeadersWidth = 51;
+            this.MinistatementDGV.RowTemplate.Height = 24;
+            this.MinistatementDGV.Size = new System.Drawing.Size(800, 265);
+            this.MinistatementDGV.TabIndex = 28;
             // 
             // ministatement
             // 
@@ -121,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.MinistatementDGV);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
@@ -130,9 +132,10 @@
             this.Name = "ministatement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ministatement";
+            this.Load += new System.EventHandler(this.ministatement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinistatementDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,6 +148,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView MinistatementDGV;
     }
 }

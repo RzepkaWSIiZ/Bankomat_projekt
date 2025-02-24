@@ -49,5 +49,17 @@ namespace ATM
                 }
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            HOME home = new HOME();
+            home.Show();
+            this.Hide();
+        }
     }
 }

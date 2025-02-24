@@ -35,7 +35,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.balancelbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -137,23 +136,12 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(294, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 37);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "SZYBKA WYPŁATA";
-            // 
             // balancelbl
             // 
             this.balancelbl.AutoSize = true;
             this.balancelbl.Font = new System.Drawing.Font("Segoe UI", 16F);
             this.balancelbl.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.balancelbl.Location = new System.Drawing.Point(320, 227);
+            this.balancelbl.Location = new System.Drawing.Point(54, 115);
             this.balancelbl.Name = "balancelbl";
             this.balancelbl.Size = new System.Drawing.Size(171, 37);
             this.balancelbl.TabIndex = 24;
@@ -199,11 +187,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(321, 28);
+            this.label1.Location = new System.Drawing.Point(223, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(175, 41);
+            this.label1.Size = new System.Drawing.Size(406, 41);
             this.label1.TabIndex = 1;
-            this.label1.Text = "BANKOMAT";
+            this.label1.Text = "BANKOMAT - Szybka wypłata";
             // 
             // FASTCASH
             // 
@@ -213,7 +201,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.balancelbl);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -241,7 +228,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label balancelbl;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;

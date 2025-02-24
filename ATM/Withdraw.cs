@@ -36,7 +36,26 @@ namespace ATM
             this.Hide();
             home.Show();
         }
-
+        private void addtransaction()
+        {
+            string TrType = "Withdraw";
+            try
+            {
+                Con.Open();
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + wdamtTb.Text + "','" + DateTime.Today.Date.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                // MessageBox.Show("Account Created Successfully");
+                Con.Close();
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
         private void Withdraw_Load(object sender, EventArgs e)
         {
             getbalance();
@@ -46,7 +65,7 @@ namespace ATM
         {
             Application.Exit();
         }
-        int oldbalance, newbalance;
+        int newbalance;
         private void button1_Click(object sender, EventArgs e)
         {
             if(wdamtTb.Text == "")
@@ -74,6 +93,7 @@ namespace ATM
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Wypłata udana!");
                         Con.Close();
+                        addtransaction();
                         HOME home = new HOME();
                         home.Show();
                         this.Hide();

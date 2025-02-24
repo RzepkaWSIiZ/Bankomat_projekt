@@ -36,7 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.balancelbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,6 +65,7 @@
             this.button6.TabIndex = 22;
             this.button6.Text = "10000 zł";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -78,6 +79,7 @@
             this.button5.TabIndex = 21;
             this.button5.Text = "5000 zł";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -91,6 +93,7 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "2000 zł";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -104,6 +107,7 @@
             this.button3.TabIndex = 19;
             this.button3.Text = "1000 zł";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -117,6 +121,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "500 zł";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -130,6 +135,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "100 zł";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -142,27 +148,28 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "SZYBKA WYPŁATA";
             // 
-            // label4
+            // balancelbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(320, 227);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 37);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "STAN KONTA";
+            this.balancelbl.AutoSize = true;
+            this.balancelbl.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.balancelbl.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.balancelbl.Location = new System.Drawing.Point(320, 227);
+            this.balancelbl.Name = "balancelbl";
+            this.balancelbl.Size = new System.Drawing.Size(171, 37);
+            this.balancelbl.TabIndex = 24;
+            this.balancelbl.Text = "STAN KONTA";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(349, 402);
+            this.label5.Location = new System.Drawing.Point(372, 402);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 23);
+            this.label5.Size = new System.Drawing.Size(63, 23);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Wyloguj się";
+            this.label5.Text = "Powrót";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel1
             // 
@@ -185,6 +192,7 @@
             this.label6.Size = new System.Drawing.Size(33, 37);
             this.label6.TabIndex = 10;
             this.label6.Text = "X";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -204,7 +212,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.balancelbl);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -217,6 +225,7 @@
             this.Name = "FASTCASH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FASTCASH";
+            this.Load += new System.EventHandler(this.FASTCASH_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -233,7 +242,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label balancelbl;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;

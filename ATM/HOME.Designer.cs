@@ -115,6 +115,7 @@
             this.button3.TabIndex = 11;
             this.button3.Text = "SZYBKA WYPŁATA";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 

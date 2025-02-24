@@ -47,7 +47,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 100 + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 100 + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 Con.Close();
@@ -66,7 +66,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 500 + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 500 + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 Con.Close();
@@ -85,7 +85,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 1000 + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 1000 + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 Con.Close();
@@ -104,7 +104,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 2000 + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 2000 + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 Con.Close();
@@ -123,7 +123,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 5000 + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 5000 + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 Con.Close();
@@ -142,7 +142,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 10000 + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + 10000 + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 Con.Close();

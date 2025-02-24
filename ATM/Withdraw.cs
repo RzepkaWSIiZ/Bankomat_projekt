@@ -42,7 +42,7 @@ namespace ATM
             try
             {
                 Con.Open();
-                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + wdamtTb.Text + "','" + DateTime.Today.Date.ToString() + "')";
+                string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "','" + wdamtTb.Text + "','" + DateTime.Now.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
                 // MessageBox.Show("Account Created Successfully");
